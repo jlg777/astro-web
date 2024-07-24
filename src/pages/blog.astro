@@ -1,8 +1,10 @@
 ---
-import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
+<Header />
 <Layout title="Blog">
   <h1>Mi blog de aprendizaje sobre Astro</h1>
   <p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro.</p>
@@ -12,6 +14,8 @@ import Layout from '../layouts/Layout.astro'
     <li><a href="/posts/post-3/">Publicación 3</a></li>
   </ul>
 </Layout>
+<Footer />
+
 <style>
   main {
     margin: auto;
