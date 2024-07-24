@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/Card.astro'
 import '../styles/global.css'
+import Navigation from '../components/Navigation.astro'
 
 const pageTitle = 'Sobre mi'
 const identity = {
@@ -20,9 +21,7 @@ const fontWeight = 'bold'
 const textCase = 'uppercase'
 ---
 
-<a href="/">Inicio</a>
-<a href="/about/">{pageTitle}</a>
-<a href="/blog/">Blog</a>
+<Navigation />
 <Layout title="About">
   <main>
     <svg
